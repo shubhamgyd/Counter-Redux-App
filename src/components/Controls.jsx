@@ -3,6 +3,7 @@ import { useRef } from "react";
 
 const Controls = () => {
   const dispatch = useDispatch();
+  const inputElement = useRef();
 
   const handleIncrement = () => {
     dispatch({ type: "INCREMENT" });
@@ -38,7 +39,6 @@ const Controls = () => {
     });
   };
 
-  const inputElement = useRef();
 
   return (
     <>
